@@ -24,12 +24,12 @@ const redis = new Redis(
     const cities = await redis.lrange('list', 0, -1);
     console.log(cities)
 
-    // You can combine multiple commands and send them to the server in batches to improve performance.
+    // You can combine multiple commands and send them to the server as a batch to improve performance.
     const hash = await redis
         .pipeline()
         .hset('hash', 'key1', 'value1')
         .hset('hash', 'key2', 'value2')
-        .hset('hash', 'key3', 'value3')
+        .hg('hash', 'key3', 'value3')
         .hgetall('hash')
         .exec();
 
