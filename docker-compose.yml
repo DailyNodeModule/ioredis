@@ -1,0 +1,10 @@
+version: '2'
+services:
+  app:
+    build: .
+    environment:
+    - REDIS_URL=redis://redis:6379/0
+    links:
+    - redis
+  redis:
+    image: redis

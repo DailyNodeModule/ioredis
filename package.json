@@ -1,0 +1,18 @@
+{
+  "name": "ioredis",
+  "version": "1.0.0",
+  "description": "This project is a sample project for ioredis",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dailynodemodule/sample"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "Zachary Boyd <zachary@dailynodemodule.com>",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "ioredis": "^4.9.0"
+  }
+}
